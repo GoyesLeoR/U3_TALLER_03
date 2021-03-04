@@ -18,6 +18,7 @@ function addUsuario(usuario, clave, nombre, apellido, correo, tipo_usuario, id_c
             carrera: id_carrera,
             fecha_creacion: new Date(),
             fecha_nacimiento: fecha_nacimiento,
+            
         }
         console.log( fullUsuario )
         storage.add( fullUsuario )

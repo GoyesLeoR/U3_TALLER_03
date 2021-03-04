@@ -16,7 +16,7 @@ router.get('/', function(req, res) {
         })
 })
 
-router.post('/', function(req, res) {
+router.post('/usuario', function(req, res) {
     controller.addUsuario(req.body.usuario, req.body.clave, req.body.nombre, req.body.apellido, req.body.correo, req.body.tipo_usuario, req.body.carrera, req.body.fecha_nacimiento)
         .then((data) => {
             response.success(req, res, data, 201)
