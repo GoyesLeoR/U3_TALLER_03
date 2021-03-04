@@ -1,7 +1,7 @@
 const use = require('./network')
 const storage = require('./storage')
 
-function addinstitucion(nombre, domicilio, telefono, tipo_institucion, id_representante_legal) {
+function addInstitucion(nombre, domicilio, telefono, tipo_institucion, id_representante_legal) {
     return new Promise( (resolve, reject) => {
         if (!nombre) {
             console.error('[MensajeControlado] No hay institucion.')
@@ -57,7 +57,7 @@ function deleteInstitucion(id_institucion) {
 }
 
 module.exports = {
-    addinstitucion,
+    addInstitucion,
     getInstitucion,
     updateInstitucion,
     deleteInstitucion,
