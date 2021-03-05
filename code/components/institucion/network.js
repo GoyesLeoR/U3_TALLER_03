@@ -27,7 +27,7 @@ router.post('/', function(req, res) {
 })
 
 router.patch('/:id', function(req, res) {
-    controller.updateInstitucion(req.params.id, req.body.nombre, req.body.domicilio, req.body.telefono, req.body.tipo_institucion, req.body.representante_legal)
+    controller.updateInstitucion(req.params.id, req.body.nombre, req.body.domicilio, req.body.telefono, req.body.tipo_institucion/*, req.body.representante_legal*/)
         .then((data) => {
             response.success(req, res, data, 200)
         })
